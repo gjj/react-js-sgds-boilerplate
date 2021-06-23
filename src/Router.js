@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
+import Settings from "./components/settings/SettingsPage";
 import PageHeader from "./components/ui/PageHeader";
 import PageFooter from "./components/ui/PageFooter";
 
@@ -15,6 +16,9 @@ export default function Router() {
           <Switch>
             <Route exact path="/">
               <Home />
+            </Route>
+            <Route exact path="/settings">
+              <Settings />
             </Route>
           </Switch>
         </div>
