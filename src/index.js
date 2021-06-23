@@ -3,21 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { Auth0Provider } from "@auth0/auth0-react";
+import "sgds-govtech/css/sgds.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Auth0ProviderWithHistory>
-      <App />
-    </Auth0ProviderWithHistory> */}
-    <Auth0Provider
-      domain={process.env.REACT_APP_AUTH0_DOMAIN}
-      clientId={process.env.REACT_APP_AUTH0_CLIENT_ID}
-      redirectUri={window.location.origin}
-    >
-      <App />
-    </Auth0Provider>
-    ,
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
